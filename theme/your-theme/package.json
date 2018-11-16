@@ -1,0 +1,23 @@
+{
+  "name": "wordpress-laravel-mix",
+  "version": "1.0.0",
+  "description": "A setup for using Laravel Mix with WordPress",
+  "scripts": {
+    "dev": "yarn run development",
+    "development": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "yarn run development -- --watch",
+    "prod": "yarn run production",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "main": "webpack.mix.js",
+  "author": "Ben Furfie <hello@benfurfie.co.uk>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "2.0.1",
+    "laravel-mix": "^2.1.14",
+    "laravel-mix-purgecss": "^3.0.0",
+    "postcss-sorting": "^4.0.0"
+  }
+}
