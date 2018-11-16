@@ -10,6 +10,8 @@ let purgeCss = require('laravel-mix-purgecss');
 
 /**
  * Configure our compilation tasks
+ * @param string The location of your source file.
+ * @param string The location of where you want your output file to end up.
  */
 mix.sass('assets/styles/app.scss', 'css/app.css')
    .options({
