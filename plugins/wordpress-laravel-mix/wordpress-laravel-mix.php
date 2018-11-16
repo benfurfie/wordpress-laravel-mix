@@ -18,6 +18,10 @@
  * License:     MIT
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+  exit; // Exit if accessed directly
+}
+
 function mix($type, $src = 'app', $outputTag = true)
 {
   /**
